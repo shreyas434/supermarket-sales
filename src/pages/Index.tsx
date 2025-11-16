@@ -1,15 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BarChart3, MapPin, TrendingUp, Upload, Zap, ShieldCheck } from "lucide-react";
+import { BarChart3, MapPin, TrendingUp, Zap, ShieldCheck, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const features = [
-    {
-      icon: Upload,
-      title: "Easy Data Upload",
-      description: "Upload CSV files instantly and start analyzing your sales data in seconds",
-    },
     {
       icon: BarChart3,
       title: "Visual Analytics",
@@ -32,8 +27,13 @@ const Index = () => {
     },
     {
       icon: ShieldCheck,
-      title: "Secure & Private",
-      description: "Your data stays in your browser - no server uploads, complete privacy",
+      title: "Secure Database",
+      description: "Your data is securely stored in MongoDB with full CRUD operations support",
+    },
+    {
+      icon: Building2,
+      title: "Company Management",
+      description: "Manage multiple companies with individual dashboards and analytics",
     },
   ];
 
@@ -55,8 +55,8 @@ const Index = () => {
             </h1>
             <p className="mb-8 text-xl text-muted-foreground">
               Transform your sales data into actionable insights with powerful analytics
-              and intelligent visualizations. Find stores, track trends, and make
-              data-driven decisions.
+              and intelligent visualizations. Manage companies, track trends, and make
+              data-driven decisions with full CRUD operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="gap-2">
@@ -115,7 +115,7 @@ const Index = () => {
               Ready to Analyze Your Data?
             </h2>
             <p className="mb-8 text-lg opacity-90">
-              Start exploring your sales data today with our powerful analytics tools
+              Start exploring your sales data today with our powerful analytics tools and MongoDB database
             </p>
             <Button asChild size="lg" variant="secondary">
               <Link to="/dashboard">
